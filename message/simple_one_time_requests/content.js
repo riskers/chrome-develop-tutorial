@@ -12,6 +12,6 @@ chrome.runtime.onMessage.addListener(
     // sender: 发送者
     // sendResponse: 回调函数
 
-    sendResponse('收到信息')
+    sendResponse('收到来自popup的信息')
   }
 )

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "pass message:simple request",
+  "icons": {
+    "128": "./logo.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "./logo.png",
+    "default_title": "pass message:simple request",
+    "default_popup": "popup.html"
+  }
+}

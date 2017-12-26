@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "0.0.1",
-  "name": "pass message",
+  "name": "pass message:long-lived connections",
   "icons": {
     "128": "./logo.png"
   },
@@ -27,7 +27,7 @@
   ],
   "browser_action": {
     "default_icon": "./logo.png",
-    "default_title": "pass message",
+    "default_title": "pass message:long-lived connections",
     "default_popup": "popup.html"
   }
 }

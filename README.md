@@ -1,6 +1,6 @@
 开发 Chrome App / Extension 的指导
 
-* [ ] pass message
+* [x] pass message
 * [ ] file system
 * [ ] content scripts
 * [ ] background
