@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "file system",
+  "icons": {
+    "128": "./logo.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    {
+      "fileSystem": ["write", "directory"]
+    }
+  ]
+}
