@@ -8,7 +8,8 @@
 * [长连接](#t2)
 * 跨扩展程序消息传递
 * 网页发送消息
-* 原生消息通信
+* [原生消息通信(native message)](#t5)
+
 
 <h2 id="t1">简单一次性请求</h2>
 
@@ -33,3 +34,8 @@
 ### [DEMO](./long_lived_connections)
 
 <img src="../assets/long_lived_connections.png" width="300" title="long_lived_connections" alt="long_lived_connections"/>
+
+
+<h2 id="t5">原生消息通信(native message)</h2>
+
+> 也可以直接启动一个本地 server 来通信
