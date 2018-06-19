@@ -38,4 +38,4 @@
 
 <h2 id="t5">原生消息通信(native message)</h2>
 
-> 也可以直接启动一个本地 server 来通信
+> 也可以直接启动一个本地 server 来通信: https://github.com/electron/electron/issues/8692
