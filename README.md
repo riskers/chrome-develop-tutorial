@@ -16,6 +16,19 @@
 
 > 一般来说，Extension 和浏览器结合紧密，而 App 更像是一个独立的环境。
 
+### Extension Scripts vs Content scripts vs Inject scripts
+
+```
+* Extension Scripts — Full access to all permittedchrome.* APIs.
+This includes the background page, and all pages which have direct access to it viachrome.extension.getBackgroundPage(), such as thebrowser pop-ups.
+* Content scripts (via the manifest file orchrome.tabs.executeScript) — Partial access to some of the chrome APIs, full access to the page’s DOM (not to any of the window objects, including frames).
+Content scripts run in a scope between the extension and the page. The global window object of a Content script is distinct from the page/extension’s global namespace.
+* Injected scripts (via this method in a Content script) — Full access to all properties in the page.No access to any of the chrome.* APIs.
+Injected scripts behave as if they were included by the page itself, and are not connected to the extension in any way. See this post to learn more information on the various injection methods.
+
+--- https://medium.com/front-end-hacking/how-do-chrome-extensions-modify-webpages-using-content-scripts-9ae278e2bdf8
+```
+
 * [x] pass message
 * [x] file system
 * [ ] content scripts
