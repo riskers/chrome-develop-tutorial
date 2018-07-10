@@ -2,6 +2,23 @@
 
 ## 概述
 
+###
+
+https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html
+
+
+```
+background 控制
+    -> popup
+    -> options.html
+    -> browserAction
+    -> pageAction
+    -> menucontext
+    -> devtools
+    -> omnibox
+    -> ...
+```
+
 ### Chrome App vs Chrome Extension
 
 先要搞清楚 Chrome App 和 Chrome Extension 的区别：
